@@ -55,8 +55,7 @@ export const App: FC<Props> = () => {
   function getTitle(): string {
     return Math.random()
       .toString()
-      .split(".")[1]
-      .slice(0, 10)
+      .slice(2, 12)
       .split("")
       .reduce((acc, alphabetIndex) => acc + alphabet[Number(alphabetIndex)], "");
   }
